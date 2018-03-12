@@ -1,5 +1,5 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "factors": [
     "donor",
     "tissue_type"
@@ -15,208 +15,103 @@
     "x": ["donor"],
     "y": ["tissue_type"]
   },
-  "assays": [{
-    "aggregation_id": 3844,
-    "factors": {
-      "donor": "NA",
-      "tissue_type": "786_O"
+  "conditions": [{
+      "aggregation_ids": [3844, 3864],
+      "factors": {
+        "donor": "NA",
+        "tissue_type": "786_O"
+      }
+    }, {
+      "aggregation_ids": [3885, 3871],
+      "factors": {
+        "donor": "NA",
+        "tissue_type": "ACHN"
+      }
+    }, {
+      "aggregation_ids": [3851],
+      "factors": {
+        "donor": "HIM12",
+        "tissue_type": "glomeruli"
+      }
+    }, {
+      "aggregation_ids": [6995, 6996],
+      "factors": {
+        "donor": "HIM18",
+        "tissue_type": "glomeruli"
+      }
+    }, {
+      "aggregation_ids": [3852],
+      "factors": {
+        "donor": "HIM22",
+        "tissue_type": "glomeruli"
+      }
+    }, {
+      "aggregation_ids": [6999, 7000],
+      "factors": {
+        "donor": "HIM23",
+        "tissue_type": "glomeruli"
+      }
+    }, {
+      "aggregation_ids": [7003],
+      "factors": {
+        "donor": "HIM26",
+        "tissue_type": "glomeruli"
+      }
+    }, {
+      "aggregation_ids": [7006, 7007],
+      "factors": {
+        "donor": "NA",
+        "tissue_type": "HK_2"
+      }
+    }, {
+      "aggregation_ids": [3898, 3899],
+      "factors": {
+        "donor": "HIM13",
+        "tissue_type": "kidney_tubular"
+      }
+    }, {
+      "aggregation_ids": [6997, 3845],
+      "factors": {
+        "donor": "HIM15",
+        "tissue_type": "kidney_tubular"
+      }
+    }, {
+      "aggregation_ids": [7004, 7005],
+      "factors": {
+        "donor": "HIM23",
+        "tissue_type": "kidney_tubular"
+      }
+    }, {
+      "aggregation_ids": [6994, 6992],
+      "factors": {
+        "donor": "NA",
+        "tissue_type": "podocytes"
+      }
+    }, {
+      "aggregation_ids": [6993, 3819],
+      "factors": {
+        "donor": "HIM13",
+        "tissue_type": "renal_cell_carcinoma"
+      }
+    }, {
+      "aggregation_ids": [3863, 6998],
+      "factors": {
+        "donor": "HIM15",
+        "tissue_type": "renal_cell_carcinoma"
+      }
+    }, {
+      "aggregation_ids": [7001, 7002],
+      "factors": {
+        "donor": "HIM23",
+        "tissue_type": "renal_cell_carcinoma"
+      }
+    }, {
+      "aggregation_ids": [9809, 9810],
+      "factors": {
+        "donor": "NA",
+        "tissue_type": "vascular_endothelium"
+      }
     }
-  }, {
-    "aggregation_id": 3864,
-    "factors": {
-      "donor": "NA",
-      "tissue_type": "786_O"
-    }
-  },
-  {
-    "aggregation_id": 3885,
-    "factors": {
-      "donor": "NA",
-      "tissue_type": "ACHN"
-    }
-  },
-  {
-    "aggregation_id": 3871,
-    "factors": {
-      "donor": "NA",
-      "tissue_type": "ACHN"
-    }
-  },
-  {
-    "aggregation_id": 3851,
-    "factors": {
-      "donor": "HIM12",
-      "tissue_type": "glomeruli"
-    }
-  },
-  {
-    "aggregation_id": 6995,
-    "factors": {
-      "donor": "HIM18",
-      "tissue_type": "glomeruli"
-    }
-  },
-  {
-    "aggregation_id": 6996,
-    "factors": {
-      "donor": "HIM18",
-      "tissue_type": "glomeruli"
-    }
-  },
-  {
-    "aggregation_id": 3852,
-    "factors": {
-      "donor": "HIM22",
-      "tissue_type": "glomeruli"
-    }
-  },
-  {
-    "aggregation_id": 6999,
-    "factors": {
-      "donor": "HIM23",
-      "tissue_type": "glomeruli"
-    }
-  },
-  {
-    "aggregation_id": 7000,
-    "factors": {
-      "donor": "HIM23",
-      "tissue_type": "glomeruli"
-    }
-  },
-  {
-    "aggregation_id": 7003,
-    "factors": {
-      "donor": "HIM26",
-      "tissue_type": "glomeruli"
-    }
-  },
-  {
-    "aggregation_id": 7006,
-    "factors": {
-      "donor": "NA",
-      "tissue_type": "HK_2"
-    }
-  },
-  {
-    "aggregation_id": 7007,
-    "factors": {
-      "donor": "NA",
-      "tissue_type": "HK_2"
-    }
-  },
-  {
-    "aggregation_id": 3898,
-    "factors": {
-      "donor": "HIM13",
-      "tissue_type": "kidney_tubular"
-    }
-  },
-  {
-    "aggregation_id": 3899,
-    "factors": {
-      "donor": "HIM13",
-      "tissue_type": "kidney_tubular"
-    }
-  },
-  {
-    "aggregation_id": 6997,
-    "factors": {
-      "donor": "HIM15",
-      "tissue_type": "kidney_tubular"
-    }
-  },
-  {
-    "aggregation_id": 3845,
-    "factors": {
-      "donor": "HIM15",
-      "tissue_type": "kidney_tubular"
-    }
-  },
-  {
-    "aggregation_id": 7004,
-    "factors": {
-      "donor": "HIM23",
-      "tissue_type": "kidney_tubular"
-    }
-  },
-  {
-    "aggregation_id": 7005,
-    "factors": {
-      "donor": "HIM23",
-      "tissue_type": "kidney_tubular"
-    }
-  },
-  {
-    "aggregation_id": 6994,
-    "factors": {
-      "donor": "NA",
-      "tissue_type": "podocytes"
-    }
-  },
-  {
-    "aggregation_id": 6992,
-    "factors": {
-      "donor": "NA",
-      "tissue_type": "podocytes"
-    }
-  },
-  {
-    "aggregation_id": 6993,
-    "factors": {
-      "donor": "HIM13",
-      "tissue_type": "renal_cell_carcinoma"
-    }
-  },
-  {
-    "aggregation_id": 3819,
-    "factors": {
-      "donor": "HIM13",
-      "tissue_type": "renal_cell_carcinoma"
-    }
-  },
-  {
-    "aggregation_id": 3863,
-    "factors": {
-      "donor": "HIM15",
-      "tissue_type": "renal_cell_carcinoma"
-    }
-  },
-  {
-    "aggregation_id": 6998,
-    "factors": {
-      "donor": "HIM15",
-      "tissue_type": "renal_cell_carcinoma"
-    }
-  },
-  {
-    "aggregation_id": 7001,
-    "factors": {
-      "donor": "HIM23",
-      "tissue_type": "renal_cell_carcinoma"
-    }
-  },
-  {
-    "aggregation_id": 7002,
-    "factors": {
-      "donor": "HIM23",
-      "tissue_type": "renal_cell_carcinoma"
-    }
-  },
-  {
-    "aggregation_id": 9810,
-    "factors": {
-      "donor": "NA",
-      "tissue_type": "vascular_endothelium"
-    }
-  },
-  {
-    "aggregation_id": 9809,
-    "factors": {
-      "donor": "NA",
-      "tissue_type": "vascular_endothelium"
-    }
-  }
-  
+
   ]
 }
