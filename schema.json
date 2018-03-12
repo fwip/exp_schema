@@ -9,18 +9,24 @@
   "properties": {
 
     "schema_version": {
+      "title": "Schema Version",
       "description": "The version of schema that this experiment conforms to",
       "type": "string"
     },
 
     "name": {
+      "title": "Name",
+      "description": "A short human-readable identifier for the experiment",
       "type": "string"
     },
     "description": {
+      "title": "Description",
+      "description": "A longer description of the purpose of the experiment",
       "type": "string"
     },
 
     "factors": {
+      "title": "Factors",
       "description": "A list of factors that matter in this experimental design",
       "type": "array",
       "items": {
@@ -30,16 +36,22 @@
     },
 
     "display": {
+      "title": "Display",
+      "description": "Display/presentation properties",
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "views": {
+          "title": "Track views",
+          "description": "The types of data to show in the genome browser",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "x": {
+          "title": "X-factors",
+          "description": "The factors that should be displayed along the X-axis in a grid view",
           "type": "array",
           "items": {
             "type": "string",
@@ -47,6 +59,8 @@
           }
         },
         "y": {
+          "title": "Y-factors",
+          "description": "The factors that should be displayed along the Y-axis in a grid view",
           "type": "array",
           "items": {
             "type": "string",
@@ -57,6 +71,7 @@
     },
 
     "conditions": {
+      "title": "Conditions",
       "description": "A list of conditions (combinations of factors)",
       "type": "array",
       "items": {
@@ -71,6 +86,8 @@
         "additionalProperties": false,
         "properties": {
           "aggregation_ids": {
+            "title": "Datasets",
+            "description": "The aggregations chosen to fulfill this condition",
             "type": "array",
             "items": {
               "type": "number",
@@ -78,6 +95,8 @@
             }
           },
           "factors": {
+            "title": "Factors",
+            "description": "The desired factor/value pairs for this condition",
             "type": "object",
             "patternProperties": {
               "/^[-a-z]+$/": {
