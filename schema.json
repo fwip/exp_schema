@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Experiment",
+  "description": "A description of an experiment",
+  "type": "object",
+
+  "additionalProperties": false,
+
+  "properties": {
+
+    "schema_version": {
+      "description": "The version of schema that this experiment conforms to",
+      "type": "string"
+    },
+
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+
+    "factors": {
+      "description": "A list of factors that matter in this experimental design",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "uniqueItems": true
+      }
+    },
+
+    "display": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "views": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "uniqueItems": true
+          }
+        },
+        "y": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+
+    "conditions": {
+      "description": "A list of conditions (combinations of factors)",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/condition"
+      }
+    }
+  },
+
+  "definitions": {
+    "condition": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "aggregation_ids": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "uniqueItems": true
+            }
+          },
+          "factors": {
+            "type": "object",
+            "patternProperties": {
+              "/^[-a-z]+$/": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "required": ["factors"]
+    }
+  },
+
+  "required": ["schema_version", "name", "factors", "conditions"]
+}

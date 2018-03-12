@@ -1,5 +1,7 @@
 {
-  "version": "0.2",
+  "schema_version": "0.2",
+  "name": "RCC Kidney DNase",
+  "description": "Mapping the kidney DNase landscape",
   "factors": [
     "donor",
     "tissue_type"
