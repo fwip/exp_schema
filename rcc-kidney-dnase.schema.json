@@ -7,15 +7,101 @@
     "tissue_type"
   ],
   "display": {
-    "views": [
-      "dhs",
-      "signal",
-      "normalized",
-      "cut-counts",
-      "footprints"
+    "views": ["dhs", "signal", "normalized", "cut-counts", "footprints"],
+    "x": [
+      {
+        "display_label": "HIM12",
+        "factors": {
+          "donor": "HIM12"
+        }
+      },
+      {
+        "display_label": "HIM18",
+        "factors": {
+          "donor": "HIM18"
+        }
+      },
+      {
+        "display_label": "HIM22",
+        "factors": {
+          "donor": "HIM22"
+        }
+      },
+      {
+        "display_label": "HIM26",
+        "factors": {
+          "donor": "HIM26"
+        }
+      },
+      {
+        "display_label": "NA",
+        "factors": {
+          "donor": "NA"
+        }
+      },
+      {
+        "display_label": "HIM13",
+        "factors": {
+          "donor": "HIM13"
+        }
+      },
+      {
+        "display_label": "HIM15",
+        "factors": {
+          "donor": "HIM15"
+        }
+      }
     ],
-    "x": ["donor"],
-    "y": ["tissue_type"]
+    "y": [
+      {
+        "display_label": "786 O",
+        "factors": {
+          "tissue_type": "786_O"
+        }
+      },
+      {
+        "display_label": "ACHN",
+        "factors": {
+          "tissue_type": "ACHN"
+        }
+      },
+      {
+        "display_label": "glomeruli",
+        "factors": {
+          "tissue_type": "glomeruli"
+        }
+      },
+      {
+        "display_label": "HK 2",
+        "factors": {
+          "tissue_type": "HK_2"
+        }
+      },
+      {
+        "display_label": "kidney tubular",
+        "factors": {
+          "tissue_type": "kidney_tubular"
+        }
+      },
+      {
+        "display_label": "podocytes",
+        "factors": {
+          "tissue_type": "podocytes"
+        }
+      },
+      {
+        "display_label": "renal cell carcinoma",
+        "factors": {
+          "tissue_type": "renal_cell_carcinoma"
+        }
+      },
+      {
+        "display_label": "vascular endothelium",
+        "factors": {
+          "tissue_type": "vascular_endothelium"
+        }
+      }
+    ]
   },
   "conditions": [{
       "aggregation_ids": [3844, 3864],

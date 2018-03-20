@@ -54,7 +54,17 @@
           "description": "The factors that should be displayed along the X-axis in a grid view",
           "type": "array",
           "items": {
-            "type": "string",
+            "type": "object",
+            "properties": {
+              "display_label": {
+                "title": "Display Label",
+                "description": "The label that will be shown on the axis",
+                "type": "string"
+              },
+              "factors": {
+                "$ref": "#/definitions/factor_value_pairs"
+              }
+            },
             "uniqueItems": true
           }
         },
@@ -63,7 +73,17 @@
           "description": "The factors that should be displayed along the Y-axis in a grid view",
           "type": "array",
           "items": {
-            "type": "string",
+            "type": "object",
+            "properties": {
+              "display_label": {
+                "title": "Display Label",
+                "description": "The label that will be shown on the axis",
+                "type": "string"
+              },
+              "factors": {
+                "$ref": "#/definitions/factor_value_pairs"
+              }
+            },
             "uniqueItems": true
           }
         }
@@ -82,30 +102,33 @@
 
   "definitions": {
     "condition": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "aggregation_ids": {
-            "title": "Datasets",
-            "description": "The aggregations chosen to fulfill this condition",
-            "type": "array",
-            "items": {
-              "type": "number",
-              "uniqueItems": true
-            }
-          },
-          "factors": {
-            "title": "Factors",
-            "description": "The desired factor/value pairs for this condition",
-            "type": "object",
-            "patternProperties": {
-              "/^[-a-z]+$/": {
-                "type": "string"
-              }
-            }
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "aggregation_ids": {
+          "title": "Datasets",
+          "description": "The aggregations chosen to fulfill this condition",
+          "type": "array",
+          "items": {
+            "type": "number",
+            "uniqueItems": true
           }
         },
-        "required": ["factors"]
+        "factors": {
+          "$ref": "#/definitions/factor_value_pairs"
+        }
+      },
+      "required": ["factors"]
+    },
+    "factor_value_pairs": {
+      "title": "Factors",
+      "description": "The desired factor/value pairs for this condition",
+      "type": "object",
+      "patternProperties": {
+        "/^[-a-z]+$/": {
+          "type": "string"
+        }
+      }
     }
   },
 
